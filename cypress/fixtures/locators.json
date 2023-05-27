@@ -1,0 +1,18 @@
+{
+    "loginPage" : {
+        "loginEmail": "#email",
+        "loginPass": "#password",
+        "loginSubmitButton": "button[type='submit']"
+    },
+
+    "createGallery" : {
+       "galleryTitle" : "#title",
+       "galleryDescription": "#description",
+       "galleryImageUrl": ".input-group.mb-3",
+       "gallerySubmitButton" : "#app > div.container > div > div > form > button:nth-child(4)",
+       "galleryCancelButton" : "#app > div.container > div > div > form > button:nth-child(5)"
+
+       
+
+    }
+}
