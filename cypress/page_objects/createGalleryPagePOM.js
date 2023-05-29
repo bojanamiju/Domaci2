@@ -31,6 +31,21 @@ class CreateGallery {
         return cy.get(".btn.btn-custom").contains('Cancel');
     }
 
+    get addImageButton() {
+        return cy.get('#app > div.container > div > div > form > div:nth-child(3) > button');
+    }
+
+    get galleryImageUrl2() {
+        return cy.get('#app > div.container > div > div > form > div:nth-child(3) > div:nth-child(3) > div > input');
+    }
+
+    get upArrowButton() {
+        return cy.get('#app > div.container > div > div > form > div:nth-child(3) > div > div > div > button:nth-child(1)');
+    }
+
+    get downArrowButton() {
+        return cy.get('#app > div.container > div > div > form > div:nth-child(3) > div:nth-child(2) > div > div > button:nth-child(3)');
+    }
 
 }
 
