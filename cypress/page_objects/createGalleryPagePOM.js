@@ -47,6 +47,12 @@ class CreateGallery {
         return cy.get('#app > div.container > div > div > form > div:nth-child(3) > div:nth-child(2) > div > div > button:nth-child(3)');
     }
 
+    loginUser(email, pass) {
+        this.loginEmail.type(email);
+        this.loginPassword.type(pass);
+        this.loginSubmitButton.click();
+    }
+
 }
 
 export const createGallery = new CreateGallery();

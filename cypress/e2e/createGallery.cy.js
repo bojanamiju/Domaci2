@@ -6,7 +6,25 @@ import {faker} from '@faker-js/faker'
 var gTitle = faker.commerce.productName();
 var gDescription = faker.lorem.sentence();
 
+beforeEach(() => {
+
+    cy.visit('login');
+    createGallery.loginEmail.type("bojana@gmail.com");
+    createGallery.loginPassword.type("12345678");
+    createGallery.loginSubmitButton.click();
+    cy.wait(2000);
+    cy.visit('create');
+
+}
+
+
+)
+
 describe('Create Gallery page', () => {
+
+    it.only('test', () => {
+        createGallery.loginUser('bojana@gmail.com','12345678')
+    } )
 
     it('Create gallery with all valid inputs', () => {
 
@@ -132,6 +150,7 @@ it("Create Gallery without Title", () => {
     cy.wait(2000);
 
 })
+
 
 
 });
